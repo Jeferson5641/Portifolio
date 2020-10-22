@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,47 +14,231 @@
     <link rel="manifest" href="/assets/img/icons/site.webmanifest">
     <title>Portfolio</title>
 </head>
+<!-- fim do Header links e metas -->
 <body>
+    <!-- inicio do container -->
     <div class="container">
-        <div class="hamburguer">
+         <div class="hamburguer"><!-- Inicio Hamburguer -->
             <div class="line" id="line1"></div>
             <div class="line" id="line2"></div>
             <div class="line" id="line3"></div>
             <span>Fechar</span>
-        </div>
-
-        <header>
+        </div><!-- Fim Hamburguer -->
+        
+        <header  id="home">
             <div class="img-wrapper">
                 <img src="assets/img/bg.jpg" alt="">
             </div>
             <div class="banner">
                 <h1>Web Developer & Front End Designer</h1>
                 <p>Jeferson Gomes da Silva</p>
-                <button>Saiba mais</button>
+                <button class="botao">Saiba Mais</button>
+                <!-- <a href="#" class="botao">Saiba mais</a> -->
             </div>
         </header>
-            <aside class="sidebar">
-                <nav>
-                    <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Conecimento</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Contaro</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
-                    </ul>
-                </nav>
+        <aside class="sidebar"><!-- Inicio menu lateral -->
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimento" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
+                </ul>
+            </nav>
 
-                <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-github-alt"></i></a>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github-alt"></i></a>
+            </div>
+        </aside><!-- Fim menu lateral -->
+
+
+        <section class="sessao-conhecimentos" id="conhecimento"><!-- Inicio Conhecimentos -->
+            <div class="sessao-header">
+                <h1>conhecimentos</h1>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nisi nam quidem expedita atque magni ea laborum omnis similique perferendis. Ex, commodi? Nobis iure dolorem ad laudantium cum vitae non.</p>
+                    </div>
                 </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem earum soluta hic dolore facilis nemo at error aspernatur quaerat! Sapiente suscipit quas molestiae architecto, non eum nisi illo est aperiam.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h3>Designer</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis accusamus ex aut aliquam libero omnis aperiam cumque delectus optio consectetur maxime quasi explicabo, ullam iure ea earum. Officia, eligendi incidunt.</p>
 
-            </aside>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, suscipit? Sint ipsa consectetur, maxime cum obcaecati recusandae odit vero illo enim. Voluptatem ex repellendus, maxime eos optio quidem sed placeat.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatum fugiat libero atque, aliquam, labore veritatis soluta, harum fuga hic magni! Aliquid labore dicta pariatur, veniam est quod doloremque ab.</p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Git e GitHub</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptate quos officiis rerum veritatis, accusantium deleniti nisi cum culpa quaerat. Molestias illo velit necessitatibus aliquid, consectetur eum soluta magni saepe.</p>
+                    </div>
+                </div>
+                <div class="conhecimento-img-wrapper">
+                    <img src="/assets/img/conhecimentos.png" alt="imagem conhecimentos">
+                </div>
+            </div>
+        </section><!-- Fim Conhecimentos -->
 
-        
+        <section class="sessao-projetos" id="projetos"> <!-- Inicio Projetos -->
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="projetos">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/assets/img/proj1.jpg" alt="imagem do projeto ToDo">
+                    </div>
+                    <div class="card-info">
+                        <h2>ToDo list</h2>
+                        <h3>JavaScript</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, saepe accusantium. Necessitatibus voluptate nesciunt blanditiis nihil corporis saepe, quod officia error cumque illo, iure labore dignissimos nostrum quaerat asperiores! Dicta.</p>
+                        <a href="#" class="btn botao-projetos">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/assets/img/proj2.jpg" alt="imagem do projeto Maratona">
+                    </div>
+                    <div class="card-info">
+                        <h2>Maratona</h2>
+                        <h3>HTML, CSS3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore tempore fuga ex eveniet, provident earum. Ipsa reprehenderit, nihil perspiciatis, commodi cum quidem facere, voluptatem modi minus nostrum doloribus facilis laudantium.</p>
+                        <a href="#" class="btn botao-projetos">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="/assets/img/proj3.jpg" alt="imagem do projeto Casa Bela">
+                    </div>
+                    <div class="card-info">
+                        <h2>Casa Bela</h2>
+                        <h3>HTML</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur molestias, odio iure fugiat ex id praesentium nulla commodi qui. Vero ut aspernatur voluptates sed dolor assumenda, iste quos beatae aperiam.</p>
+                        <a href="#" class="btn botao-projetos">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- Fim Projetos -->
+
+        <section class="sessao-contato" id="contato"><!-- Ínicio Contato -->
+            <div class="contato-wrapper">
+                <div class="contato-left">
+
+                </div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section><!-- Fim Contato -->
+
+        <section class="sessao-orcamento" id="orcamento"><!-- Ínicio Orçamento -->
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form action="#">
+                    <label for="qtde">Quantidade de paginas</label>
+                    <input type="number" min="1" name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label >Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo" min="1" max="10">
+                    <label id="preco">R$ 0,00</label>
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section><!-- Fim Orçamento -->
+
+        <footer><!-- Ínocio Rodapé -->
+            <div class="footer-content">
+                <p>
+                    Copyright &COPY;; 2020, JGS.
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f rodape"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp rodape"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram rodape"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github-alt rodape"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer><!-- Fim Rodapé -->
+
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
     </div>
+    <!-- Fim do container -->
 </body>
 <script src="/assets/js/script.js"></script>
+
 </html>
